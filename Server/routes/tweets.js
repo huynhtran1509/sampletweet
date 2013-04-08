@@ -10,11 +10,12 @@ exports.list = function(req, res){
 		else {
 			var tweet = require("../module/tweet.js");
 			tweet.getAll(db,1,function(err,list) {
+				dbDriver.closeDatabase();
 				if(!err)
 				{
 					res.send(list);
 				}
-				dbDriver.closeDatabase();
+				
 				res.end();
 			});
 

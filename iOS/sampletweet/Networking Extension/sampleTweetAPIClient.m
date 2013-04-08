@@ -10,7 +10,7 @@
 #import "AFJSONRequestOperation.h"
 #import "Post.h"
 
-static NSString * const kAFAppDotNetAPIBaseURLString = @"http://localhost:3000/";
+static NSString * const kAFAppDotNetAPIBaseURLString = @"http://sampletweet.ap01.aws.af.cm/";
 
 @implementation sampleTweetAPIClient
 + (sampleTweetAPIClient *)sharedClient {

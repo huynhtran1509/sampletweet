@@ -4,8 +4,8 @@ var mongodb = require('mongodb'),
   }),
   db1 = new mongodb.Db('sampletweet', server);
 
-var db_username = "saturngod"; // username
-var db_password = "password1"; // password
+var db_username = ""; // username
+var db_password = ""; // password
 var openDb= false; //database is already open or not. To recover the too much open database connection
 
 // callback: (err, db)
@@ -60,10 +60,13 @@ function openAndAuthDatabase(dbDriver,callback)
       console.log("ERROR CONNECTION TO DATABASE");
       console.log(err);
       dbDriver.closeDatabase();
+	  return callback(err);
     }
-
+	return callback(null,db);
+	//exit, without auth
     //db is a mongb database
-    dbDriver.authenticate(db,db_username,db_password,function(err,response){
+   /* 
+   dbDriver.authenticate(db,db_username,db_password,function(err,response){
       //after auth
       if(err)
       {      
@@ -75,7 +78,8 @@ function openAndAuthDatabase(dbDriver,callback)
         return callback(null,db);
       }
 
-    });// close db driver
+    });// close db driver auth
+	*/
   });//close open db
 }
 

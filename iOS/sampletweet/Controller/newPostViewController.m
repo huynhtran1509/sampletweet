@@ -67,7 +67,7 @@
 
 -(void)close
 {
-    if([self.delegate respondsToSelector:@selector(dismissTweedWithViewController::)])
+    if([self.delegate respondsToSelector:@selector(dismissTweedWithViewController:)])
     {
         [self.delegate dismissTweedWithViewController:self];
     }
