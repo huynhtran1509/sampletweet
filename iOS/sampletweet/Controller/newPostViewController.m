@@ -46,7 +46,7 @@
 
 -(void)newtweet
 {
-    NSDictionary* userData = @{@"username": @"saturngod",@"avatar_url":@"http://graph.facebook.com/htainlinshwe/picture"};
+    NSDictionary* userData = @{@"username": @"Ghost",@"avatar_url":@"http://sampletweet.ap01.aws.af.cm/images/ghost.png"};
     
     User* user = [[User alloc] initWithAttributes:userData];
     
