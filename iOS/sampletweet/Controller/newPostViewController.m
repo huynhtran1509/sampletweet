@@ -49,9 +49,9 @@
     NSDictionary* userData = @{@"username": @"Ghost",@"avatar_url":@"http://sampletweet.ap01.aws.af.cm/images/ghost.png"};
     
     User* user = [[User alloc] initWithAttributes:userData];
-    
+    [SVProgressHUD show];
     [Post newTweet:user AndMessage:self.messageView.text WithBlock:^(Post *post, NSError *error) {
-        
+        [SVProgressHUD dismiss];
         if (error) {
             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:[error localizedDescription] delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
         } else {

@@ -147,9 +147,17 @@
 -(void)completedTweedWithViewController:(newPostViewController*)viewcontroller {
  
     [viewcontroller dismissModalViewControllerAnimated:YES];
+    
+    //call refreshNew after 0.8 seconds
+    [self performSelector:@selector(refershNew) withObject:nil afterDelay:0.8];
+}
+
+-(void)refershNew
+{
     [self.refreshControl beginRefreshing];
     [self refresh];
 }
+
 -(void)dismissTweedWithViewController:(newPostViewController*)viewcontroller {
     
     [viewcontroller dismissModalViewControllerAnimated:YES];
