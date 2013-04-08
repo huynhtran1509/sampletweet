@@ -40,6 +40,8 @@
 		ADB1835116F375050033DC5F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADB1834E16F375050033DC5F /* SVProgressHUD.bundle */; };
 		ADB1835216F375050033DC5F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB1835016F375050033DC5F /* SVProgressHUD.m */; };
 		ADB1835416F375EE0033DC5F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB1835316F375EE0033DC5F /* QuartzCore.framework */; };
+		ADFAD85A171337060049EE0F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAD859171337060049EE0F /* Icon.png */; };
+		ADFAD85C171337080049EE0F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAD85B171337080049EE0F /* Icon@2x.png */; };
 		ADFE8D3216F208CD00830C40 /* postTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE8D3116F208CD00830C40 /* postTableViewCell.m */; };
 		ADFE8D3616F2161A00830C40 /* profile-image-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFE8D3416F2161A00830C40 /* profile-image-placeholder.png */; };
 		ADFE8D3716F2161A00830C40 /* profile-image-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFE8D3516F2161A00830C40 /* profile-image-placeholder@2x.png */; };
@@ -105,6 +107,8 @@
 		ADB1834F16F375050033DC5F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		ADB1835016F375050033DC5F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		ADB1835316F375EE0033DC5F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ADFAD859171337060049EE0F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ADFAD85B171337080049EE0F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		ADFE8D3016F208CD00830C40 /* postTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postTableViewCell.h; path = View/postTableViewCell.h; sourceTree = "<group>"; };
 		ADFE8D3116F208CD00830C40 /* postTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = postTableViewCell.m; path = View/postTableViewCell.m; sourceTree = "<group>"; };
 		ADFE8D3416F2161A00830C40 /* profile-image-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-image-placeholder.png"; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		AD2AAFE316EF6F6C0075A44C = {
 			isa = PBXGroup;
 			children = (
+				ADFAD85B171337080049EE0F /* Icon@2x.png */,
+				ADFAD859171337060049EE0F /* Icon.png */,
 				ADB1835316F375EE0033DC5F /* QuartzCore.framework */,
 				AD2AAFF516EF6F6C0075A44C /* sampletweet */,
 				AD2AAFEE16EF6F6C0075A44C /* Frameworks */,
@@ -381,6 +387,8 @@
 				ADFE8D3716F2161A00830C40 /* profile-image-placeholder@2x.png in Resources */,
 				ADFE8D3C16F217C300830C40 /* newPostViewController.xib in Resources */,
 				ADB1835116F375050033DC5F /* SVProgressHUD.bundle in Resources */,
+				ADFAD85A171337060049EE0F /* Icon.png in Resources */,
+				ADFAD85C171337080049EE0F /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
